@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@symfony/webpack-encore": "^4.4.0"
+    "@symfony/webpack-encore": "^0.20.1"
   }
 }
