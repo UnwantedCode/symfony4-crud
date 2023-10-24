@@ -9,8 +9,8 @@ class CategoryTreeFrontPage extends CategoryTreeAbstract
 {
     public $html_1 = "<ul>";
     public $html_2 = "<li>";
-    public $html_3 = "<a href='";
-    public $html_4 = "'>";
+    public $html_3 = '<a href="';
+    public $html_4 = '">';
     public $html_5 = "</a>";
     public $html_6 = "</li>";
     public $html_7 = "</ul>";

@@ -7,11 +7,11 @@ use App\Utils\AbstractClasses\CategoryTreeAbstract;
 
 class CategoryTreeAdminList extends CategoryTreeAbstract
 {
-    public $html_1 = "<ul class='fa-ul text-left'>";
-    public $html_2 = "<li><i class='fa-li fa fa-arrow-right'></i>";
-    public $html_3 = "<a href='";
-    public $html_4 = "'> Edit";
-    public $html_5 = '</a> <a onclick="return confirm(\'Are you sure?\')" href="';
+    public $html_1 = '<ul class="fa-ul text-left">';
+    public $html_2 = '<li><i class="fa-li fa fa-arrow-right"></i>';
+    public $html_3 = '<a href="';
+    public $html_4 = '"> Edit';
+    public $html_5 = '</a> <a onclick="return confirm(\'Are you sure?\');" href="';
     public $html_6 = '">Delete';
     public $html_7 = "</a>";
     public $html_8 = "</li>";

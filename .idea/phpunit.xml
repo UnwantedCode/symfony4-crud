@@ -4,6 +4,51 @@
     <option name="directories">
       <list>
         <option value="$PROJECT_DIR$/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/type/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/annotations/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/common/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/phpunit/php-code-coverage/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/phpunit/php-file-iterator/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/instantiator/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/complexity/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/diff/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/doctrine-migrations-bundle/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/php-webdriver/webdriver/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/data-fixtures/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/environment/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/collections/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/cli-parser/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/doctrine-bundle/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/reflection/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/comparator/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/object-reflector/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/exporter/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/recursion-context/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/global-state/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/myclabs/deep-copy/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/dbal/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/cache/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/orm/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/code-unit/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/lines-of-code/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/migrations/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/phpunit/php-timer/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/persistence/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/deprecations/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/code-unit-reverse-lookup/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/ocramius/proxy-manager/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/phpunit/php-text-template/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/resource-operations/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/lexer/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/inflector/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/sebastian/object-enumerator/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/nikic/php-parser/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/composer/package-versions-deprecated/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/phpunit/php-invoker/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/doctrine-fixtures-bundle/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/webimpress/safe-writer/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/doctrine/event-manager/tests" />
+        <option value="$PROJECT_DIR$/vendorxx/laminas/laminas-code/tests" />
       </list>
     </option>
   </component>

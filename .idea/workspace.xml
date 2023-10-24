@@ -5,23 +5,147 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/front/_main_categories.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231024220540.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Twig/SluggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Utils/CategoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20231023220619.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/AbstractClasses/CategoryTreeAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/AbstractClasses/CategoryTreeAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/CategoryTreeAdminList.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CategoryTreeAdminList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/CategoryTreeFrontPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CategoryTreeFrontPage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/psr/container/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/type/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/service-contracts/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/common/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/cache-contracts/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/console/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phar-io/manifest/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/annotations/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/form/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phpunit/php-code-coverage/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phpunit/php-file-iterator/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/twig-bridge/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/translation-contracts/composer.json" />
+      <option value="$PROJECT_DIR$/bin/.phpunit/phpunit/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/complexity/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/stopwatch/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/property-access/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/browser-kit/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phar-io/version/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/dotenv/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/version/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/css-selector/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/diff/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/mime/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/data-fixtures/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/doctrine-migrations-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-php80/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/instantiator/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/php-webdriver/webdriver/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/http-client/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/collections/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/inflector/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/environment/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/doctrine-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/cli-parser/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-mbstring/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/asset/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/reflection/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-intl-normalizer/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/comparator/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/twig/extra-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-php72/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/http-client-contracts/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/exporter/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/global-state/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/object-reflector/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/http-kernel/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/orm/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/myclabs/deep-copy/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/process/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/cache/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/recursion-context/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/dbal/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/filesystem/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/doctrine-bridge/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/code-unit/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/config/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/sql-formatter/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/http-foundation/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/cache/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/lines-of-code/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/event-dispatcher-contracts/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/twig-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/migrations/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-intl-idn/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phpunit/phpunit/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phpunit/php-timer/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-php73/composer.json" />
+      <option value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/dom-crawler/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/yaml/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/event-dispatcher/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/deprecations/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/web-profiler-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/persistence/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/var-dumper/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/var-exporter/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/code-unit-reverse-lookup/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/resource-operations/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/framework-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/ocramius/proxy-manager/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phpunit/php-text-template/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/finder/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/panther/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/lexer/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/options-resolver/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/psr/log/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/inflector/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/doctrine-fixtures-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/routing/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/nikic/php-parser/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/phpunit-bridge/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/psr/cache/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/theseer/tokenizer/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/twig/twig/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/phpunit/php-invoker/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/webimpress/safe-writer/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sebastian/object-enumerator/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/polyfill-intl-icu/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/intl/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/composer/package-versions-deprecated/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/flex/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/validator/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/dependency-injection/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/doctrine/event-manager/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/debug-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/laminas/laminas-code/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/debug/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/sensio/framework-extra-bundle/composer.json" />
+      <option value="$PROJECT_DIR$/vendorxx/symfony/maker-bundle/composer.json" />
+    </option>
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
@@ -29,6 +153,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
@@ -95,21 +222,130 @@
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5-0/vendor/composer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/composer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit-7.5/vendor/composer" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/bin/.phpunit/phpunit/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Wx0BpI4ZKFRVbMyS6QGnqDIrqT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/var/www/html/symfony4-crud/templates/admin&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -145,11 +381,18 @@
       <workItem from="1697752995610" duration="1965000" />
       <workItem from="1697808760316" duration="11612000" />
       <workItem from="1697828340150" duration="299000" />
+      <workItem from="1698092017653" duration="10044000" />
+      <workItem from="1698184205853" duration="5857000" />
+      <workItem from="1698190329386" duration="790000" />
+      <workItem from="1698191139191" duration="335000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

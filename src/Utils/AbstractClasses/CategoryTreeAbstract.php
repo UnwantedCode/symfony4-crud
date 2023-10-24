@@ -12,7 +12,7 @@ abstract class CategoryTreeAbstract
     public $categoryList;
     protected static $dbconnection;
 
-    protected $slugger;
+    public $slugger;
 
     public function __construct(EntityManagerInterface $entityManager, UrlGeneratorInterface  $urlgenerator)
     {
