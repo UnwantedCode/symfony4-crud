@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20231024220540.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Twig/SluggerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Utils/CategoryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231025001844.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/AdminControllerCategoriesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20231023220619.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/AbstractClasses/CategoryTreeAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/AbstractClasses/CategoryTreeAbstract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/CategoryTreeAdminList.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CategoryTreeAdminList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/CategoryTreeFrontPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CategoryTreeFrontPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20231024220540.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +368,7 @@
       <workItem from="1698092017653" duration="10044000" />
       <workItem from="1698184205853" duration="5857000" />
       <workItem from="1698190329386" duration="790000" />
-      <workItem from="1698191139191" duration="335000" />
+      <workItem from="1698191139191" duration="2786000" />
     </task>
     <servers />
   </component>
