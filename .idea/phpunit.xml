@@ -3,7 +3,6 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
-        <option value="$PROJECT_DIR$/tests" />
         <option value="$PROJECT_DIR$/vendorxx/sebastian/type/tests" />
         <option value="$PROJECT_DIR$/vendorxx/doctrine/annotations/tests" />
         <option value="$PROJECT_DIR$/vendorxx/doctrine/common/tests" />
@@ -49,6 +48,7 @@
         <option value="$PROJECT_DIR$/vendorxx/webimpress/safe-writer/tests" />
         <option value="$PROJECT_DIR$/vendorxx/doctrine/event-manager/tests" />
         <option value="$PROJECT_DIR$/vendorxx/laminas/laminas-code/tests" />
+        <option value="$PROJECT_DIR$/tests" />
       </list>
     </option>
   </component>
