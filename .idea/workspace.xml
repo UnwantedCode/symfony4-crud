@@ -5,33 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/paginator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20231025003854.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rebuild_db_no_data.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/VideoFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/includes/_sort.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/includes/_videos.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controllers/Front/FrontControllerVideoTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231027192633.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSecurityTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/Front/FrontControllerSecurityTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20231025001844.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20231025003854.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/VideoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/VideoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/CategoryTreeFrontPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CategoryTreeFrontPage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/videos.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/videos.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/search_results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/search_results.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/video_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/video_list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controllers/AdminControllerCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerCategoriesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/includes/_videos.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/includes/_videos.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerCategoriesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Utils/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Utils/CategoryTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,6 +340,11 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -351,30 +358,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "last_opened_file_path": "/var/www/html/symfony4-crud/templates/front/includes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php.debug",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/html/symfony4-crud/config/packages/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/packages/test" />
       <recent name="$PROJECT_DIR$/templates/front/includes" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/templates/admin" />
@@ -384,6 +392,21 @@
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="testSecureUrls" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner file="$PROJECT_DIR$/tests/Controllers/Front/FrontControllerSecurityTest.php" scope="Pattern">
+        <test_patterns>
+          <composite_test_pattern class_fqn="App\Tests\Controllers\Front\FrontControllerSecurityTest" file_path="$PROJECT_DIR$/tests/Controllers/Front/FrontControllerSecurityTest.php" dataset="#13" method_name="testSecureUrls" />
+        </test_patterns>
+      </TestRunner>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.testSecureUrls" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -404,6 +427,13 @@
       <workItem from="1698184205853" duration="5857000" />
       <workItem from="1698190329386" duration="790000" />
       <workItem from="1698191139191" duration="9866000" />
+      <workItem from="1698251003525" duration="8676000" />
+      <workItem from="1698428690578" duration="4158000" />
+      <workItem from="1699212369448" duration="142000" />
+      <workItem from="1699212536915" duration="125000" />
+      <workItem from="1699899133768" duration="619000" />
+      <workItem from="1699908052154" duration="948000" />
+      <workItem from="1699913585438" duration="1655000" />
     </task>
     <servers />
   </component>

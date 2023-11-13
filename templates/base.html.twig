@@ -37,8 +37,10 @@
 
                 <a class="p-2 text-dark" href="{{ path('admin_main_page') }}">My account</a>
             </nav>
+            {% if not app.user %}
             <a class="btn btn-outline-primary mr-2" href="{{ path('pricing') }}">Sign up</a>
             <a class="btn btn-outline-primary" href="{{ path('login') }}">Sign in</a>
+            {% endif %}
         </div>
     {% endblock %}
 
