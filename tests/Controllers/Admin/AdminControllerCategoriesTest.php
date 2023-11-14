@@ -3,34 +3,16 @@
 namespace App\Tests\Controllers\Admin;
 
 use App\Entity\Category;
+use App\Tests\RoleAdmin;
+use App\Tests\Rollback;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class AdminControllerCategoriesTest extends WebTestCase
 {
+    use RoleAdmin;
     public $client;
     public $entityManager;
-    public function setUp()
-    {
-        parent::setUp();
-        $this->client = static::createClient([],[
-            'PHP_AUTH_USER' => 'jw@symf4.loc',
-            'PHP_AUTH_PW' => 'passw',
-        ]);
-        $this->client->disableReboot();
 
-        $this->entityManager = $this->client->getContainer()->get('doctrine.orm.entity_manager');
-        $this->entityManager->beginTransaction();
-        $this->entityManager->getConnection()->setAutoCommit(false);
-
-    }
-
-    public function tearDown(): void
-    {
-        parent::tearDown();
-        $this->entityManager->rollback();
-        $this->entityManager->close();
-        $this->entityManager = null;
-    }
 
     public function testTextOnPage()
     {
