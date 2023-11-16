@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="like/dislike (14)">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20231115030244.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/SubscriptionFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Subscription.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SubscriptionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/VideoForNoValidSubscription.php" afterDir="false" />
+    <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="video subscription (15)">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231116233054.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Traits/SaveSubscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSubscriptionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/Front/FrontControllerSubscriptionTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20231114224733.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20231115030244.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/includes/_videos.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/includes/_videos.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/pricing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/pricing.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/video_details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/video_details.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/payment.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/payment.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -431,6 +426,8 @@
       <workItem from="1699981904830" duration="16450000" />
       <workItem from="1700013850008" duration="4434000" />
       <workItem from="1700122576601" duration="757000" />
+      <workItem from="1700173471327" duration="243000" />
+      <workItem from="1700173742678" duration="4092000" />
     </task>
     <task id="LOCAL-00001" summary="after functional tests (12)">
       <option name="closed" value="true" />
@@ -448,17 +445,37 @@
       <option name="project" value="LOCAL" />
       <updated>1700003738055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="video subscription (15)">
+      <option name="closed" value="true" />
+      <created>1700173530512</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700173530512</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="after functional tests (12)" />
     <MESSAGE value="like/dislike (14)" />
-    <option name="LAST_COMMIT_MESSAGE" value="like/dislike (14)" />
+    <MESSAGE value="video subscription (15)" />
+    <option name="LAST_COMMIT_MESSAGE" value="video subscription (15)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
