@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\Traits\Likes;
+use App\Utils\VideoForNoValidSubscription;
 use App\Entity\Category;
 use App\Entity\Comment;
 use App\Entity\User;
@@ -20,19 +21,20 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class FrontController extends AbstractController
 {
     use Likes;
+
     /**
      * @Route("/", name="main_page")
      */
     public function index()
     {
-        return $this->render('front/index.html.twig' );
+        return $this->render('front/index.html.twig');
     }
 
     /**
      * @Route("/video-list/category/{categoryname},{id}/{page}", name="video_list",
      * defaults={"page": "1"})
      */
-    public function videoList($id, $page, CategoryTreeFrontPage $categories, Request $request)
+    public function videoList($id, $page, CategoryTreeFrontPage $categories, Request $request, VideoForNoValidSubscription $videoNoMembers)
     {
         $categories->getCategoryListAndParent($id);
         $ids = $categories->getChildIds($id);
@@ -41,17 +43,19 @@ class FrontController extends AbstractController
         return $this->render('front/video_list.html.twig', [
             'subcategories' => $categories,
             'videos' => $videos,
-        ] );
+            'videoNoMembers' => $videoNoMembers->check(),
+        ]);
     }
 
     /**
      * @Route("/video-details/{video}", name="video_details")
      */
-    public function videoDetails(VideoRepository $repository, $video)
+    public function videoDetails(VideoRepository $repository, $video, VideoForNoValidSubscription $videoNoMembers)
     {
         return $this->render('front/video_details.html.twig', [
             'video' => $repository->videoDetails($video),
-        ] );
+            'videoNoMembers' => $videoNoMembers->check(),
+        ]);
     }
 
     /**
@@ -65,8 +69,7 @@ class FrontController extends AbstractController
 
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_REMEMBERED');
 
-        switch($request->get('_route'))
-        {
+        switch ($request->get('_route')) {
             case 'like_video':
                 $result = $this->likeVideo($video);
                 break;
@@ -84,7 +87,7 @@ class FrontController extends AbstractController
                 break;
         }
 
-        return $this->json(['action' => $result,'id'=>$video->getId()]);
+        return $this->json(['action' => $result, 'id' => $video->getId()]);
     }
 
 
@@ -94,8 +97,7 @@ class FrontController extends AbstractController
     public function newComment(Request $request, Video $video)
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_REMEMBERED');
-        if (!empty(trim($request->request->get('comment'))))
-        {
+        if (!empty(trim($request->request->get('comment')))) {
             $comment = new Comment;
             $comment->setUser($this->getUser());
             $comment->setVideo($video);
@@ -112,30 +114,21 @@ class FrontController extends AbstractController
      * @Route("/search-results/{page}", methods={"GET"}, name="search_results",
      * defaults={"page": "1"})
      */
-    public function searchResults(Request $request, $page=1)
+    public function searchResults(Request $request, $page = 1, VideoForNoValidSubscription $videoNoMembers)
     {
         $videos = null;
         $query = null;
-        if($query = $request->get('query'))
-        {
+        if ($query = $request->get('query')) {
             $videos = $this->getDoctrine()->getRepository(Video::class)->findByTitle($query, $page, $request->get('sortby'));
             if (!$videos->getItems()) $videos = null;
         }
 
 
-        return $this->render('front/search_results.html.twig' , [
+        return $this->render('front/search_results.html.twig', [
             'videos' => $videos,
             'query' => $query,
+            'videoNoMembers' => $videoNoMembers->check(),
         ]);
-    }
-
-
-    /**
-     * @Route("/pricing", name="pricing")
-     */
-    public function pricing()
-    {
-        return $this->render('front/pricing.html.twig' );
     }
 
 
@@ -145,7 +138,7 @@ class FrontController extends AbstractController
      */
     public function payment()
     {
-        return $this->render('front/payment.html.twig' );
+        return $this->render('front/payment.html.twig');
     }
 
 
