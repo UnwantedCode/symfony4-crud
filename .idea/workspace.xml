@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="video subscription payment (16)">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20231202210214.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/VideoType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Interfaces/UploaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/LocalUploader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerUserAccountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerUsersTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20231116234041.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/Superadmin/SuperAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/Superadmin/SuperAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/upload_video.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/upload_video_locally.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/users.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/users.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSecurityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSecurityTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/RoleAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RoleAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/RoleUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RoleUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/videos.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/videos.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +329,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-time-bundle" />
       <path value="$PROJECT_DIR$/vendor/dama/doctrine-test-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/james-heinrich/getid3" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -456,7 +443,8 @@
       <workItem from="1709152924463" duration="100000" />
       <workItem from="1709153111867" duration="5605000" />
       <workItem from="1709242212570" duration="71000" />
-      <workItem from="1709242304607" duration="599000" />
+      <workItem from="1709242304607" duration="802000" />
+      <workItem from="1709243872017" duration="1996000" />
     </task>
     <task id="LOCAL-00001" summary="after functional tests (12)">
       <option name="closed" value="true" />

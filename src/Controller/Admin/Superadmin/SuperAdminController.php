@@ -8,6 +8,7 @@ use App\Entity\Video;
 use App\Form\CategoryType;
 use App\Form\VideoType;
 use App\Utils\Interfaces\UploaderInterface;
+use getID3;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\ServiceUnavailableHttpException;
@@ -74,9 +75,21 @@ class SuperAdminController extends AbstractController
     {
         if( !is_numeric($vimeo_id) )
         {
-            // you can handle here setting duration for locally stored files
+            $path = $video->getPath();
+            $getID3 = new getID3;
+            $file = $getID3->analyze($path);
+            if (isset($file['playtime_seconds'])) {
+                $video->setDuration($file['playtime_seconds']/60);
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($video);
+                $em->flush();
 
-
+            } else {
+                $this->addFlash(
+                    'danger',
+                    'We were not able to update duration. Check the video.'
+                );
+            }
             return $this->redirectToRoute('videos');
         }
 
