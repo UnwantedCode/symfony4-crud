@@ -11,6 +11,7 @@ use App\Entity\Video;
 use App\Form\UserType;
 use App\Repository\VideoRepository;
 use App\Utils\CategoryTreeFrontPage;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -142,5 +143,18 @@ class FrontController extends AbstractController
         return $this->render('front/_main_categories.html.twig', [
             'categories' => $categories
         ]);
+    }
+
+    /**
+     * @Route("/delete-comment/{comment}", name="delete_comment")
+     * @Security("user.getId() == comment.getUser().getId()")
+     */
+    public function deleteComment(Comment $comment, Request $request)
+    {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_REMEMBERED');
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($comment);
+        $em->flush();
+        return $this->redirect($request->headers->get('referer'));
     }
 }

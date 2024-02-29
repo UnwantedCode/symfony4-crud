@@ -92,4 +92,15 @@ class CategoriesController extends SuperAdminController
         }
         return false;
     }
+
+
+    public function getAllCategories(CategoryTreeAdminOptionList $categories, $editedCategory = null)
+    {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+        $categories->getCategoryList($categories->buildTree());
+        return $this->render('admin/_all_categories.html.twig', [
+            'categories' => $categories,
+            'editedCategory' => $editedCategory,
+        ]);
+    }
 }

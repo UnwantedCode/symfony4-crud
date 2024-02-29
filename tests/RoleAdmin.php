@@ -4,8 +4,11 @@ namespace App\Tests;
 
 trait RoleAdmin
 {
+    public $client;
+    public $entityManager;
     public function setUp()
     {
+        parent::setUp();
         $this->client = static::createClient([], [
             'PHP_AUTH_USER' => 'jw@symf4.loc',
             'PHP_AUTH_PW' => 'passw',

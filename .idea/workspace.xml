@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="video subscription (15)">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20231116233054.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Traits/SaveSubscription.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSubscriptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controllers/Front/FrontControllerSubscriptionTest.php" afterDir="false" />
+    <list default="true" id="9d66198c-7fde-44af-889a-6bd8a64ef9e9" name="Changes" comment="video subscription payment (16)">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231202210214.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/VideoType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Interfaces/UploaderInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/LocalUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerUserAccountTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerUsersTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20231115030244.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/payment.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/payment.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20231116234041.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/Superadmin/SuperAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/Superadmin/SuperAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/my_profile.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/upload_video.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/upload_video_locally.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/users.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/users.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSecurityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controllers/Admin/AdminControllerSecurityTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RoleAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RoleAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RoleUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RoleUser.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +147,7 @@
       <option value="$PROJECT_DIR$/vendorxx/symfony/maker-bundle/composer.json" />
     </option>
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -333,6 +342,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-time-bundle" />
       <path value="$PROJECT_DIR$/vendor/dama/doctrine-test-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -358,23 +368,25 @@
     &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/var/www/html/symfony4-crud/templates/front/includes&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/html/symfony4-crud/templates/admin&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/config/packages/prod" />
       <recent name="$PROJECT_DIR$/templates/front/includes" />
       <recent name="$PROJECT_DIR$/config/packages/test" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/templates/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/css" />
@@ -396,6 +408,13 @@
         <item itemvalue="PHPUnit.testSecureUrls" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14475.35" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -427,7 +446,17 @@
       <workItem from="1700013850008" duration="4434000" />
       <workItem from="1700122576601" duration="757000" />
       <workItem from="1700173471327" duration="243000" />
-      <workItem from="1700173742678" duration="4092000" />
+      <workItem from="1700173742678" duration="5877000" />
+      <workItem from="1701464687539" duration="656000" />
+      <workItem from="1701466065675" duration="599000" />
+      <workItem from="1701545996307" duration="10820000" />
+      <workItem from="1704311744429" duration="102000" />
+      <workItem from="1704311871218" duration="3416000" />
+      <workItem from="1709152566006" duration="322000" />
+      <workItem from="1709152924463" duration="100000" />
+      <workItem from="1709153111867" duration="5605000" />
+      <workItem from="1709242212570" duration="71000" />
+      <workItem from="1709242304607" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="after functional tests (12)">
       <option name="closed" value="true" />
@@ -453,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700173530512</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="video subscription payment (16)">
+      <option name="closed" value="true" />
+      <created>1700178514155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700178514155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +512,8 @@
     <MESSAGE value="after functional tests (12)" />
     <MESSAGE value="like/dislike (14)" />
     <MESSAGE value="video subscription (15)" />
-    <option name="LAST_COMMIT_MESSAGE" value="video subscription (15)" />
+    <MESSAGE value="video subscription payment (16)" />
+    <option name="LAST_COMMIT_MESSAGE" value="video subscription payment (16)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
