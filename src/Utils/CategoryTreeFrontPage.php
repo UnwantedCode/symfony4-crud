@@ -35,7 +35,7 @@ class CategoryTreeFrontPage extends CategoryTreeAbstract
         foreach ($categoriesArray as $value)
         {
             $catName = $this->slugger->slugify( $value['name']);
-            $url = $this->urlgenerator->generate('video_list', ['categoryname'=>$catName ,'id' =>$value['id']]);
+            $url = $this->urlgenerator->generate('video_list.en', ['categoryname'=>$catName ,'id' =>$value['id']]);
             $this->categoryList .= $this->html_2.$this->html_3. $url.$this->html_4 . $value['name'] . $this->html_5;
             if(!empty($value['children']))
             {
@@ -62,18 +62,19 @@ class CategoryTreeFrontPage extends CategoryTreeAbstract
             ];
         }
     }
-    public function getChildIds(int $parent): array
+    public function getChildIds(int $parent, array $ids = null): array
     {
-        static $ids = [];
+        //static $ids = [];
         foreach($this->categoriesArrayFromDb as $val)
         {
             if($val['parent_id'] == $parent)
             {
                 $ids[] = $val['id'].',';
-                $this->getChildIds($val['id']);
+                $this->getChildIds($val['id'], $ids);
             }
         }
-
+        if (is_null($ids))
+            return array();
         return $ids;
     }
 

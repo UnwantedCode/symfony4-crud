@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-
+use Symfony\Contracts\Translation\TranslatorInterface;
 /**
  * @Route("/admin")
  */
@@ -18,7 +18,7 @@ class MainController extends AbstractController
     /**
      * @Route("/", name="admin_main_page")
      */
-    public function index(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    public function index(Request $request, UserPasswordEncoderInterface $passwordEncoder, TranslatorInterface $translator)
     {
         $user = $this->getUser();
         $form = $this->createForm(UserType::class, $user, ['user' => $user]);
@@ -51,7 +51,7 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/videos", name="videos")
+     * @Route({"en":"/videos","pl":"/lista-wideo"}, name="videos")
      */
     public function videos(CategoryTreeAdminOptionList $categories)
     {

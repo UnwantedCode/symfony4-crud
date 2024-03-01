@@ -13,9 +13,6 @@ class AdminControllerSubscriptionTest extends WebTestCase
     use RoleUser;
     public function testDeleteSubscription()
     {
-        // $this->client->followRedirects();
-
-
         $crawler = $this->client->request('GET', '/admin/');
 
         $link = $crawler

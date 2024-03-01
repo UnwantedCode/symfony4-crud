@@ -43,7 +43,7 @@ class FrontControllerSubscriptionTest extends WebTestCase
     {
         $subscription = $this->entityManager
             ->getRepository(Subscription::class)
-            ->find(2);
+            ->find(3);
 
         $invalid_date = new \Datetime();
         $invalid_date->modify('-1 day');

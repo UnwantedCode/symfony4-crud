@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\Traits\Likes;
+use App\Utils\Interfaces\CacheInterface;
 use App\Utils\VideoForNoValidSubscription;
 use App\Entity\Category;
 use App\Entity\Comment;
@@ -35,17 +36,29 @@ class FrontController extends AbstractController
      * @Route("/video-list/category/{categoryname},{id}/{page}", name="video_list",
      * defaults={"page": "1"})
      */
-    public function videoList($id, $page, CategoryTreeFrontPage $categories, Request $request, VideoForNoValidSubscription $videoNoMembers)
+    public function videoList($id, $page, CategoryTreeFrontPage $categories, Request $request, VideoForNoValidSubscription $videoNoMembers, CacheInterface $cache)
     {
-        $categories->getCategoryListAndParent($id);
-        $ids = $categories->getChildIds($id);
-        array_push($ids, $id);
-        $videos = $this->getDoctrine()->getRepository(Video::class)->findByChildIds($ids, $page, $request->get('sortby'));
-        return $this->render('front/video_list.html.twig', [
-            'subcategories' => $categories,
-            'videos' => $videos,
-            'videoNoMembers' => $videoNoMembers->check(),
-        ]);
+        $cache = $cache->cache;
+        $video_list = $cache->getItem('video_list'.$id.$page.$request->get('sortby'));
+        // $video_list->tag(['video_list']);
+        $video_list->expiresAfter(60);
+
+
+        if(!$video_list->isHit()) {
+            $categories->getCategoryListAndParent($id);
+            $ids = $categories->getChildIds($id);
+            array_push($ids, $id);
+            $videos = $this->getDoctrine()->getRepository(Video::class)->findByChildIds($ids, $page, $request->get('sortby'));
+            $response = $this->render('front/video_list.html.twig', [
+                'subcategories' => $categories,
+                'videos' => $videos,
+                'videoNoMembers' => $videoNoMembers->check(),
+            ]);
+            $video_list->set($response);
+            $cache->save($video_list);
+        }
+        return $video_list->get();
+
     }
 
     /**
